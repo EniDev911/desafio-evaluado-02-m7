@@ -10,4 +10,3 @@ class ServiceTests(TestCase):
   
     def test_show(self):
         imprimir_en_pantalla()
-        crear_nueva_tarea()
