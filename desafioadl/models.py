@@ -6,7 +6,7 @@ class Tarea(models.Model):
 	eliminada = models.BooleanField(default=False)
 
 	def __str__(self):
-		return f"{self.id}. {self.descripcion}"
+		return f"[{self.id}] {self.descripcion}"
 
 class SubTarea(models.Model):
 	descripcion = models.TextField(default="")
@@ -14,4 +14,4 @@ class SubTarea(models.Model):
 	tarea = models.ForeignKey(Tarea, on_delete=models.CASCADE)
 
 	def __str__(self):
-		return f"{self.descripcion}"
+		return f"[{self.id}] {self.descripcion}"

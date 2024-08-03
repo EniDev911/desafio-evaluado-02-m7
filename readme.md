@@ -1,12 +1,21 @@
 Correr migraciones:
 
 ```bash
-python manage.py makemigrations
 python manage.py migrate
+```
+
+Acceder al shell:
+
+```bash
+python manage.py shell
 ```
 
 Importar funciones:
 
 ```py
-from desafioadl.service import imprimir_en_pantalla, crear_nueva_tarea, crear_sub_tarea
+from desafioadl.service import *
 ```
+
+## Screenshot
+
+![scr1](screenshot1.png)

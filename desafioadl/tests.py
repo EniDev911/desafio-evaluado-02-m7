@@ -1,7 +1,6 @@
 from django.test import TestCase
 
-from .models import Tarea
-from .service import imprimir_en_pantalla
+from .service import *
 from .tests_data import base_data
 
 class ServiceTests(TestCase):
@@ -11,3 +10,4 @@ class ServiceTests(TestCase):
   
     def test_show(self):
         imprimir_en_pantalla()
+        crear_nueva_tarea()
